@@ -1,0 +1,19 @@
+// User function Template for Java
+class Solution {
+    public long factorSum(int N) {
+        // code here.
+        long add=0;
+        for(int i=1;i<=(int)Math.sqrt(N);i++){
+            if(N%i==0){
+                if(i==N/i){
+                    add+=i;
+                }
+                else{
+                    add+=i;
+                    add+=N/i;
+                }
+            }
+        }
+        return add;
+    }
+}
